@@ -7,6 +7,9 @@ import { Navigation } from "swiper/modules";
 import DynamicSection from "../../components/DynamicSection";
 import { Helmet } from "react-helmet";
 import Welcome from "../../components/Welcome";
+import Testimonials from "../../components/Testimonials";
+import Service from "../../components/Service";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
@@ -50,7 +53,10 @@ export default function Home() {
         </div>
       </div>
       <Welcome/>
+      <Testimonials/>
+      <Service/>
       <DynamicSection />
+      <Footer/>
     </>
   );
 }

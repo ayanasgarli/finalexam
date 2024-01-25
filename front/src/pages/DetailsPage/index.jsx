@@ -43,7 +43,9 @@ const DetailsPage = () => {
           </>
         )}
       </div>
+      <div>
       <p style={{textAlign: "center", fontWeight: 700}}>Note: Muellim shekli falan yoxdu max bu qeder UI oldu ona gore amma mence esas olan logicdi onuda elemishem <SentimentSatisfiedAltIcon/> </p>
+      </div>
     </>
   );
 };

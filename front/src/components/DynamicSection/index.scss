@@ -34,18 +34,24 @@
 
 .cardWrapper {
   display: flex;
-  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  margin-top: 60px;
-  max-width: 1250px;
+  max-width: 1350px;
   flex-wrap: wrap;
   gap: 50px;
-  justify-content: center;
+  
 }
 
 .card {
+  background-color: transparent;
+  border: none;
+  color: white;
+  
   h4 {
     margin-bottom: 12px;
+    text-decoration: none;
+
   }
 }
 
@@ -53,4 +59,28 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+ 
+  .description{
+    color: gray;
+    font-size: 12px;
+  }
+   
+}
+
+@media  screen and (min-width: 300px) and (max-width: 600px) {
+      .menu{
+        ul{
+          display: none;
+        }
+        .search-sort{
+          display: none;
+        }
+
+        .cardWrapper{
+          display: flex;
+          justify-content: center;
+          padding: 10px;
+          text-align: center;
+        }
+      }
 }

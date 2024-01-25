@@ -1,15 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.scss";
+import AlignVerticalBottomIcon from '@mui/icons-material/AlignVerticalBottom';
 
 const Welcome = () => {
   return (
     <div className="welcome">
+    <div className="icon"> <AlignVerticalBottomIcon/> </div>
       <h1>Welcome</h1>
       <div className="container">
         <div className="row">
           <div className="col-xl-4 col-12">
-            <div className="card">
+            <div className="cardd">
               <h1>2002</h1>
               <p>
               In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus rutrum dui fermentum eros hendrerit, id lobortis leo volutpat.
@@ -17,7 +19,7 @@ const Welcome = () => {
             </div>
           </div>
           <div className="col-xl-4 col-12">
-            <div className="card">
+            <div className="cardd">
               <h1>2010</h1>
               <p>
               Stpat sem. Vivamus rutrum dui fermentum eros hendrerit, id lobortis leo volutpat. Maecenas sollicitudin est in libero pretium.
@@ -25,7 +27,7 @@ const Welcome = () => {
             </div>
           </div>
           <div className="col-xl-4 col-12">
-            <div className="card">
+            <div className="cardd">
               <h1>2018</h1>
               <p>
               In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus rutrum dui fermentum eros hendrerit, id lobortis leo volutpat.

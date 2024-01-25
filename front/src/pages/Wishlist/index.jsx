@@ -68,7 +68,7 @@ const Wishlist = () => {
                     {data?.name}
                   </TableCell>
                   <TableCell align="center">{data?.description}</TableCell>
-                  <TableCell align="center">{data?.price}</TableCell>
+                  <TableCell align="center">${data?.price}</TableCell>
                   <TableCell align="center">
                     <Button
                       onClick={() => handleDelete(data)}

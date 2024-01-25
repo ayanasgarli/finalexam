@@ -1,7 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .footer{
     p{
         text-align: center;
-        color: black;
+        background-image: url("https://preview.colorlib.com/theme/pulse/img/footer-bg.jpg");
+        padding: 60px;
+        color: white;
         background-color: transparent;
     }
 }

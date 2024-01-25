@@ -13,10 +13,10 @@ const Navbar = () => {
           <Link className="btn" to={"/"}>
             Home
           </Link>
-          <Link className="btn" to={"/about"}>
+          <Link className="btn" >
             About us
           </Link>
-          <Link className="btn" to={"/restaurant"}>
+          <Link className="btn">
             Restaurant
           </Link>
           <Link className="btn" to={"/add"}>

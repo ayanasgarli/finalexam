@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.scss";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import { getAll } from "../../services/api/httprequest";
@@ -7,6 +8,7 @@ import { Input, Button } from "@mui/material";
 import { BasketItemContext } from "../../services/context/basketItemContextProvider";
 import { WishlistItemContext } from "../../services/context/wishlistItemContextProvider";
 import Swal from "sweetalert2";
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 
 const DynamicSection = () => {
   const [meals, setMeals] = useState([]);
@@ -63,7 +65,7 @@ const DynamicSection = () => {
       <MenuBookIcon />
       <h3>Our Menu</h3>
 
-    <div>
+    <div className="search-sort">
     <Input
     placeholder="Search"
     style={{backgroundColor: "white", borderRadius: "6px", padding: "8px", margin: "10px"}}
@@ -87,29 +89,27 @@ const DynamicSection = () => {
         <li>Dinner</li>
       </ul>
 
-      
-
       <div className="cardWrapper">
         {filteredData &&
           filteredData.map((meal) => {
             return (
-                <div  key={meal._id}>
+                <div className="col-xl-4 col-sm-6 col-12" key={meal._id}>
               <div className="card">
                 <h4>
-                  <Link to={`/${meal._id}`} style={{ color: "white" }}>
+                  <Link to={`/${meal._id}`} style={{ color: "white", textDecoration: "none" }}>
                     {meal.name}
                   </Link>
                 </h4>
                 <div className="cardDescr">
-                  <p>{meal.description}</p>
-                  <p>..................................</p>
+                  <p className="description">{meal.description}</p>
+                  <p>...................</p>
                   <p>${meal.price}</p>
                   <div>
                     <Button
                       onClick={() => handleAddToBasket(meal)}
                       variant="outlined"
                     >
-                      cart
+                      <ShoppingBasketIcon/>
                     </Button>
                     <Button
                       onClick={() => handleLikeItem(meal)}
