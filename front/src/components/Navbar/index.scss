@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 25px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    .name{
+        h1{
+            span{
+                color: #FFC515;
+            }
+        }
+    }
+    .pages{
+        text-decoration: none;
+        .btn{
+            color: white;
+            transition: 0.3s;
+            background-color: transparent;
+            border: none;
+            margin-right: 8px;
+            font-size: 16px;
+            padding: 15px;
+        }
+        .btn:hover{
+            color: #FFC515;
+        }
+    }
+    .number{
+        h4{
+            span{
+                color: #FFC515;
+            }
+        }
+    }
+    }
+    .burger{
+        display: none;
+    
+}
+
+@media  screen and (min-width: 300px) and (max-width: 600px) {
+     .navbar{
+        .pages{
+            display: none;
+        }
+        .number{
+            display: none;
+        }
+        .burger{
+            display: block;
+        }
+     }   
+  }

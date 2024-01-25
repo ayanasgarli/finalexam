@@ -1,0 +1,56 @@
+.menu {
+  padding: 50px 0 85px 0;
+  background-image: url(https://preview.colorlib.com/theme/pulse/img/menu-bg.jpg);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+  h3 {
+    margin-top: 20px;
+    font-size: 48px;
+  }
+  ul {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    list-style: none;
+  }
+  .see{
+    background-color: #FFC515;
+    color: black;
+    border: none;
+    padding: 20px 50px;
+    margin: 50px;
+    font-size: 20px;
+  }
+}
+
+.cardWrapper {
+  display: flex;
+  margin-top: 60px;
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: 1250px;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.card {
+  h4 {
+    margin-bottom: 12px;
+  }
+}
+
+.cardDescr {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
